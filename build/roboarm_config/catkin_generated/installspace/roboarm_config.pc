@@ -1,0 +1,8 @@
+prefix=/home/fabi/catkin_ws/install
+
+Name: roboarm_config
+Description: Description of roboarm_config
+Version: 0.2.0
+Cflags: 
+Libs: -L/home/fabi/catkin_ws/install/lib 
+Requires: 

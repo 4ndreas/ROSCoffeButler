@@ -1,0 +1,8 @@
+prefix=/home/fabi/catkin_ws/devel
+
+Name: arbotix_firmware
+Description: Description of arbotix_firmware
+Version: 0.10.0
+Cflags: 
+Libs: -L/home/fabi/catkin_ws/devel/lib 
+Requires: 

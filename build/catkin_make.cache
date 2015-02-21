@@ -1,0 +1,2 @@
+arbotix:arbotix_controllers:arbotix_firmware:arbotix_msgs:arbotix_python:arbotix_sensors:roboarm_config
+-DCATKIN_DEVEL_PREFIX=/home/fabi/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/fabi/catkin_ws/install -G Unix Makefiles

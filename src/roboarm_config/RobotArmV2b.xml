@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<robot name="RobotArmV2">
+  <link name="base_link">
+  </link>
+  
+  <link name="upper_base">
+  </link>
+    
+  <joint name="joint1" type="revolute">
+    <axis xyz="0 0 1"/>
+    <limit effort="1000.0" lower="-3.14159265359" upper="3.14159265359" velocity="10.0"/>
+    <parent link="base_link"/>
+    <child link="upper_base"/>
+    <origin rpy="0 0 0" xyz="0 0 0.067"/>
+  </joint>
+
+  <link name="Link1">
+  </link>
+
+  <joint name="joint2" type="revolute">
+    <axis xyz="0 1 0"/>
+    <limit effort="1000.0" lower="-2.0943951" upper="2.0943951" velocity="10.0"/>
+    <parent link="upper_base"/>
+    <child link="Link1"/>
+    <origin rpy="0 0 0" xyz="0 0 0.146"/>
+  </joint>
+  
+  <link name="Link2">
+  </link>
+  
+  <joint name="joint3" type="revolute">
+    <limit effort="1000.0" lower="-2.44346095" upper="2.44346095" velocity="10.0"/>
+    <axis xyz="0 1 0"/>
+    <parent link="Link1"/>
+    <child link="Link2"/>
+    <origin rpy="0 0 0" xyz="0 0 0.2"/>
+  </joint>
+  
+  <link name="Link3">
+  </link>
+  
+  <joint name="joint4" type="revolute">
+    <limit effort="1000.0" lower="-3.14159265359" upper="3.14159265359" velocity="10.0"/>
+    <axis xyz="0 0 1"/>
+    <parent link="Link2"/>
+    <child link="Link3"/>
+    <origin rpy="0 0 0" xyz="0 0 0.142"/>
+  </joint>
+  
+  <link name="Link4">
+  </link>
+  
+  <joint name="joint5" type="revolute">
+    <limit effort="1000.0" lower="-1.74532925" upper="1.74532925" velocity="10.0"/>
+    <axis xyz="0 1 0"/>
+    <parent link="Link3"/>
+    <child link="Link4"/>
+    <origin rpy="0 0 0" xyz="0 0 0.096"/>
+  </joint>
+  
+  <link name="TCP">
+  </link>
+  
+  <joint name="joint6" type="revolute">
+    <limit effort="1000.0" lower="-1.57079633" upper="1.57079633" velocity="10.0"/>
+    <axis xyz="0 0 1"/>
+    <parent link="Link4"/>
+    <child link="TCP"/>
+    <origin rpy="0 0 0" xyz="0 0 0.053"/>
+  </joint>
+
+</robot>

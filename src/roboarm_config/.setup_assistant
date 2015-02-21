@@ -1,0 +1,8 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: roboarm_config
+    relative_path: RobotArmV2b.xml
+  SRDF:
+    relative_path: config/RobotArmV2.srdf
+  CONFIG:
+    generated_timestamp: 1424480804
